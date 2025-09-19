@@ -1,5 +1,7 @@
 # Minekart: Voxel Sprint
 
+A two-phase voxel racer that blends a timed car construction phase with a hazard-strewn sprint inspired by classic kart racers, now presented through a full 3D preview in the garage and a chase-cam perspective during the race. Build your machine from the supplied parts catalog, then launch into a high-downforce dash against mixed-behaviour AI opponents.
+Mario kart style racer in the minecraft universe.
 A two-phase voxel racer that blends a timed car construction phase with a hazard-strewn sprint inspired by classic kart racers. Build your machine from the supplied parts catalog, then launch into a high-downforce dash against mixed-behaviour AI opponents.
 
 ## Quickstart
@@ -25,6 +27,14 @@ Vitest unit tests live in the `tests/` directory and can be executed with `npm t
 * 120-second timer with audible cues in the HUD.
 * Searchable, category-aware palette sourced from `src/assets/parts_catalog.csv`.
 * Grid-snapped editor with mirror toggle, rotation control, and height slider.
+* Live 3D preview renders your current build with subtle lighting so you can judge proportions while placing parts.
+* Symmetry validator and live stats panel for mass, CG height, drag, wheelbase, and more.
+* Preset loader for the recommended **Wedge-Glide v1** blueprint.
+* Allowed mount checks that honour `allowed_mounts` from the CSV.
+* Lock the build to serialize a race-ready blueprint.
+* 120-second timer with audible cues in the HUD.
+* Searchable, category-aware palette sourced from `src/assets/parts_catalog.csv`.
+* Grid-snapped editor with mirror toggle, rotation control, and height slider.
 * Symmetry validator and live stats panel for mass, CG height, drag, wheelbase, and more.
 * Preset loader for the recommended **Wedge-Glide v1** blueprint.
 * Allowed mount checks that honour `allowed_mounts` from the CSV.
@@ -39,6 +49,12 @@ Vitest unit tests live in the `tests/` directory and can be executed with `npm t
 
 ## Race Phase
 
+* Three-lap sprint on **Hazard Loop – Seed A** featuring curbs, ramps, debris and rumble strips.
+* Five AI rivals (three clean racers, two aggressive rammers) using a seeded, deterministic planner.
+* Item pads roll power-ups and display cooldowns in the HUD.
+* Fixed-step physics (120 Hz) with drag, grip, and aero exaggeration.
+* 3D chase camera with depth-sorted track rendering, ramps, hazards, and ghost overlays.
+* Replay system with best-lap ghost (`R` to toggle) and deterministic seeding for repeatable runs.
 * Three-lap sprint on **Hazard Loop – Seed A** featuring curbs, ramps, debris and rumble strips.
 * Five AI rivals (three clean racers, two aggressive rammers) using a seeded, deterministic planner.
 * Item pads roll power-ups and display cooldowns in the HUD.
