@@ -1,0 +1,36 @@
+name,category,length_blocks,width_blocks,height_blocks,mass,drag_coeff,grip_coeff,durability,allowed_mounts,notes
+Base Cube 1x1x1,chassis,1,1,1.0,1.0,0.02,0.0,90,any,General-purpose structural voxel
+Elongated Beam 2x1x1,chassis,2,1,1.0,1.6,0.03,0.0,85,any,Good for spines and braces
+Elongated Beam 3x1x1,chassis,3,1,1.0,2.3,0.04,0.0,85,any,Use for outriggers
+Elongated Beam 4x1x1,chassis,4,1,1.0,3.0,0.05,0.0,82,any,Span larger gaps; higher bending
+Plate 2x2x0.5,chassis,2,2,0.5,0.8,0.02,0.0,75,any,Good for caps and floors
+Plate 3x3x0.5,chassis,3,3,0.5,1.2,0.03,0.0,72,any,Undertray and aero surfaces
+Corner Brace 1x1x1 (tri),chassis,1,1,1.0,0.9,0.02,0.0,88,any,Diagonal bracing element
+Lightweight Cube 1x1x1,chassis,1,1,1.0,0.6,0.02,0.0,60,any,Swap in high areas to lower CG
+Ballast Cube 1x1x1 (dense),ballast,1,1,1.0,2.4,0.03,0.0,95,any,For CG tuning; use low in chassis
+Skid Plate 3x1x0.5,armor,3,1,0.5,1.1,0.02,0.0,92,underside;nose,Protects against curbs/landings
+Bumper Bar 3x1x1,armor,3,1,1.0,1.5,0.03,0.0,93,nose;tail,Sacrificial ram/defense bar
+Wheel Guard 2x1x1,armor,2,1,1.0,1.0,0.03,0.0,88,sides,Prevents wheel pop-offs in rams
+Axle Brace 1x1x1,drive,1,1,1.0,0.9,0.02,0.0,96,axle,Secondary support for wheel mounts
+Steering Hinge 1x1x1,drive,1,1,1.0,0.7,0.02,0.0,80,front_axle,Enables steering at front wheels
+Differential Block,drive,2,2,1.0,2.2,0.04,0.0,85,axle,Bias torque; optional if physics supports
+Locked Axle Block,drive,2,2,1.0,2.0,0.04,0.0,90,axle,Improves traction; worse turning on high grip
+Small Wheel 1.5x,wheel,1,1,1.0,1.2,0.08,0.8,70,axle,"Low drag, modest grip, quick accel"
+Medium Wheel 2.0x,wheel,2,1,2.0,1.8,0.1,0.9,78,axle,Balanced choice; stable at speed
+Large Wheel 2.5x,wheel,3,2,3.0,2.6,0.12,0.92,82,axle,Great for bumps; more drag
+Ice Tire (narrow),wheel,2,1,2.0,1.7,0.09,0.75,76,axle,Narrow contact; better bite on low grip
+Soft Tire (high grip),wheel,2,1,2.0,1.9,0.12,0.98,70,axle,High grip; higher drag and wear
+Hard Tire (low drag),wheel,2,1,2.0,1.6,0.09,0.85,88,axle,Lower grip but durable and fast on straights
+Tailplane 3x5,aero,5,3,0.5,1.4,0.04,0.0,70,roof;tail,High downforce; stabilizes jumps
+Roof Lip 3x1,aero,3,1,0.5,0.5,0.02,0.0,75,roof,Helps pitch control near jumps
+Winglet 1x2,aero,2,1,0.5,0.4,0.02,0.0,72,rear_corners,Yaw stability; mount aft of CG
+Undertray 4x2,aero,4,2,0.5,1.2,0.03,0.0,78,underside,Smoother airflow and landing slide
+Fairing 3x2,aero,3,2,1.0,1.0,0.03,0.0,74,nose;sides,Reduce snag; minor downforce when canted
+Glider Surface 4x3,aero,4,3,0.5,1.5,0.05,0.0,68,roof;tail,For exaggerated aero/glide meta
+Micro-Fin 1x1,aero,1,1,0.5,0.2,0.01,0.0,70,any,Trim yaw; cheap stability
+Outrigger Beam 3x1x1,chassis,3,1,1.0,2.1,0.04,0.0,84,sides,Widen track; mount wheels far outboard
+Nose Cone 2x1x1 (wedge),aero,2,1,1.0,0.8,0.02,0.0,75,nose,Helps deflect rams and reduce drag
+Quick-Detach Cover 3x2,utility,3,2,1.0,0.9,0.03,0.0,65,roof,Repair speed; yank off after damage
+Reinforcement Plate 2x1,chassis,2,1,0.5,0.9,0.02,0.0,95,any,Doubles joint shear strength
+Shock Proxy (flex beam),suspension,2,1,1.0,1.0,0.03,0.0,75,between_axles,Simulated suspension via flex
+Pivot Block,suspension,1,1,1.0,0.7,0.02,0.0,80,front;rear,Helps pseudo-camber/toe tweaks
